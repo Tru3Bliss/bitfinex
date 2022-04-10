@@ -12,7 +12,8 @@ module.exports = {
             200: '#112330b3'
           },
           blue:{
-            DEFAULT: '#82BAF6'
+            DEFAULT: '#82BAF6',
+            light:'#82baf640',
           },
           green:{
             DEFAULT: '#03CA9B',
@@ -20,6 +21,14 @@ module.exports = {
           },
           red:{
             DEFAULT: '#f05359'
+          },
+          yellow:{
+            800:'#7b6a21',
+            900: '#443a11'
+          },
+          gray:{
+            100: '#ffffffb3',
+            200:'#44606C'
           }
         }
       },
@@ -28,6 +37,7 @@ module.exports = {
         7.3: '29px',
         7.5: '30px',
         12.5: '50px',
+        15: '60px',
         37: '150px',
         525: '525px',
         176: '176px'
@@ -37,7 +47,7 @@ module.exports = {
       }
     },
     screens: {
-      'tablet': '640px',
+      'tablet': '600px',
       'laptop': '1024px',
       'desktop': '1280px',
     },

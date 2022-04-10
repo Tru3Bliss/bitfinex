@@ -1,23 +1,11 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
 import PropTypes from "prop-types";
 
-interface ContextInterface {
-  loading: boolean;
-  setLoading: any;
-  auth: boolean;
-  setAuth: any;
-}
+export const AppContext = createContext();
 
-export const AppContext = createContext<ContextInterface>({
-  loading: false,
-  setLoading: null,
-  auth: false,
-  setAuth: null,
-});
-
-const AppContextProvider = ({ children }: any) => {
-  const [loading, setLoading] = useState<boolean>(false);
-  const [auth, setAuth] = useState<any>(false);
+const AppContextProvider = ({ children }) => {
+  const [loading, setLoading] = useState(false);
+  const [auth, setAuth] = useState(false);
 
   return (
     <AppContext.Provider

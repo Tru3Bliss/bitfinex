@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = (props: any) => {
+const Input = (props) => {
   const {
     label,
     className = "",
@@ -11,7 +11,7 @@ const Input = (props: any) => {
   } = props;
   return (
     <div className="flex flex-col gap-2">
-      <label className="text-app-blue font-light">{label}</label>
+      <label className="text-app-blue font-light text-left">{label}</label>
       <input
         value={value}
         onChange={(e) => setValue(e.target.value)}
